@@ -22,8 +22,8 @@ The Client:
 - Verifies the signature with the public key embedded in the certificate;<br>
 - Decrypts the message;<br>
 - Prints the message on screen;<br>
-
-
+<br>
+<br>
 
 
 ## Content of the directory:
