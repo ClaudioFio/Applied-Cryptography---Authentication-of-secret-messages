@@ -30,9 +30,6 @@ The Client:
 
 - **Server_Sign.py**: the Server's script; <br>
 - **Client_Verification.py**: the Client's script. <br>
-
-What you need to create via SimpleAuthority:
-
 - **CA_cert.pem**: the Certification Authority's certificate; <br>
 - **Server_cert.pem**: the Server's certificate; <br>
 - **Server_key.pem**: the Server's private key; <br>
