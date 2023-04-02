@@ -22,3 +22,29 @@ The Client:
 - Verifies the signature with the public key embedded in the certificate;<br>
 - Decrypts the message;<br>
 - Prints the message on screen;<br>
+
+
+
+
+## Content of the directory:
+
+- **Server_Sign.py**: the Server's script; <br>
+- **Client_Verification.py**: the Client's script. <br>
+
+What you need to create via SimpleAuthority:
+
+- **CA_cert.pem**: the Certification Authority's certificate; <br>
+- **Server_cert.pem**: the Server's certificate; <br>
+- **Server_key.pem**: the Server's private key; <br>
+
+## Description of the project:
+
+The certification authority "Claudio_CA" released a certificate to the Server.
+The Server can produce and send authenticated and encrypted messages to the Client.
+The Client after verifying the validity of the Server certificate and signature, decrypts and prints the message.
+
+Running the "Server_Sign.py" script, it will ask for a message to encrypt and Server's the private key.
+It will encrypt the message and produce a "messagefile.txt".
+After that, it is possible to run the "Client_Verification.py" script.
+The script will ask for the Certification Authority certificate and the Server certificate and after checking the validity of the Server's certificate, it will ask for the message's file to decrypt.
+The script will decrypt and print the message.
